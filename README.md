@@ -16,7 +16,7 @@ This module defines the game board, GUI, and core game logic for the Gomoku game
 
 **Auto-Play and Training**: Supports automated game playing and training modes.
 
-**test.py**
+**newtest.py**
 
 This module implements a **Deep Q-Network (DQN)** using TensorFlow to serve as the AI opponent. It includes:
 
@@ -39,3 +39,37 @@ This module implements a **Deep Q-Network (DQN)** using TensorFlow to serve as t
 **Install Dependencies**:
 
 ```pip install tensorflow numpy```
+
+**Run the Game**:
+
+Navigate to the project directory.
+
+Execute the following command to start the game:
+
+```python newtest.py```
+
+**Game Controls**:
+
+**Left Mouse Click**: Place a piece on the board.
+
+**Auto-Training Button**: Triggers 1000 automated training games.
+
+**Auto-Move Button**: Makes a single automated move by the AI.
+
+## Features
+**Graphical User Interface**: Interactive game board with Tkinter.
+
+**AI Opponent**: Deep Q-Network (DQN) implemented in newtest.py.
+
+**Auto-Play Mode**: Automated gameplay for training and demonstration.
+
+**Data Recording**: Saves game states and results for training the DQN.
+
+**Training Integration**: Trains the DQN using recorded game data.
+
+## Notes
+The game board size is set to 8x8 by default. Modify mapsize in Map.py to change the board size.
+
+The DQN model uses convolutional layers to process the game board state. Adjust the model architecture in test.py if needed.
+
+Ensure the DataSets and Saver directories exist or the script will create them automatically.
